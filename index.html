@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empires Holidays Enquiry</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .enquiry-container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="enquiry-container">
+      <h2 class="text-center mb-4">Empires Holidays Enquiry Form</h2>
+      <form id="enquiryForm">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-control" id="fullName" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-control" id="phoneNumber" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Preferred Destinations</label>
+            <input
+              type="text"
+              class="form-control"
+              id="preferredDestinations"
+            />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Travel Start Date</label>
+            <input type="date" class="form-control" id="startDate" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Travel End Date</label>
+            <input type="date" class="form-control" id="endDate" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Number of Days (2D/1N)</label>
+            <input type="text" class="form-control" id="noOfDays" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Number of Travelers</label>
+            <div class="input-group">
+              <input
+                type="number"
+                class="form-control"
+                id="adults"
+                placeholder="Adults"
+              />
+              <input
+                type="number"
+                class="form-control"
+                id="children"
+                placeholder="Children"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Type of Trip</label>
+            <select class="form-select" id="tripType">
+              <option value="Leisure">Leisure</option>
+              <option value="Business">Business</option>
+              <option value="Honeymoon">Honeymoon</option>
+              <option value="Group Tour">Group Tour</option>
+              <option value="Group Tour">Collage IV</option>
+              <option value="Group Tour">School Tour</option>
+              <option value="Family Vacation">Family Vacation</option>
+              <option value="Other">Other (please specify)</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Preferred Accommodation Type</label>
+            <select class="form-select" id="accommodationType">
+              <option value="Hotel">Hotel</option>
+              <option value="Resort">Resort</option>
+              <option value="Airbnb">Airbnb/Private Rental</option>
+              <option value="Cruise">Cruise</option>
+              <option value="Other">Other (please specify)</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Specific Hotel or Resort</label>
+            <input type="text" class="form-control" id="specificHotel" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Transportation Preferences</label>
+            <select class="form-select" id="transportation">
+              <option value="">-- Select Transportation --</option>
+              <option value="Flight">Flight</option>
+              <option value="Train">Train</option>
+              <option value="Car Rental">Car Rental</option>
+              <option value="Private Transfer">Private Transfer</option>
+              <option value="Other">Other (please specify)</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Transportation Seater</label>
+            <select class="form-select" id="seater">
+              <option value="">-- Select Seater --</option>
+              <option value="14 Seater">14 Seater</option>
+              <option value="21 Seater">21 Seater</option>
+              <option value="30 Seater">30 Seater</option>
+              <option value="54 Seater">54 Seater</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Budget Range (per person)</label>
+            <input type="text" class="form-control" id="budgetRange" />
+          </div>
+          <div class="col-12">
+            <label class="form-label">Specific Requests or Requirements</label>
+            <textarea
+              class="form-control"
+              id="specificRequests"
+              rows="2"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Remarks</label>
+            <textarea class="form-control" id="remarks" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="d-grid mt-4">
+          <button type="submit" class="submit-btn">Submit Enquiry</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="text-center mt-5 text-muted small">
+      <p>© Empires Holidays. All Rights Reserved | Developed by MG Coders</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-and-conditions.html">Terms & Conditions</a> |
+        <a href="cancellation-refund.html">Cancellation & Refund Policy</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document
+        .getElementById("enquiryForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Collecting user input values
+          const fullName = document.getElementById("fullName").value;
+          const phoneNumber = document.getElementById("phoneNumber").value;
+          const email = document.getElementById("email").value;
+          const preferredDestinations = document.getElementById(
+            "preferredDestinations"
+          ).value;
+          const startDate = document.getElementById("startDate").value;
+          const endDate = document.getElementById("endDate").value;
+          const noOfDays = document.getElementById("noOfDays").value;
+          const adults = document.getElementById("adults").value;
+          const children = document.getElementById("children").value;
+          const tripType = document.getElementById("tripType").value;
+          const accommodationType =
+            document.getElementById("accommodationType").value;
+          const specificHotel = document.getElementById("specificHotel").value;
+          const transportation =
+            document.getElementById("transportation").value;
+          const budgetRange = document.getElementById("budgetRange").value;
+          const specificRequests =
+            document.getElementById("specificRequests").value;
+          const remarks = document.getElementById("remarks").value;
+          const seater = document.getElementById("seater").value;
+
+          // Formatting the message for WhatsApp
+          const message = `Hello! I would like to enquire:%0A
+*Full Name*: ${encodeURIComponent(fullName)}%0A
+*Phone Number*: ${encodeURIComponent(phoneNumber)}%0A
+*Email*: ${encodeURIComponent(email)}%0A
+*Preferred Destinations*: ${encodeURIComponent(preferredDestinations)}%0A
+*Travel Dates*: ${encodeURIComponent(startDate)} to ${encodeURIComponent(
+            endDate
+          )}%0A
+*Number of Days*: ${encodeURIComponent(noOfDays)}%0A
+*Adults*: ${encodeURIComponent(adults)}, *Children*: ${encodeURIComponent(
+            children
+          )}%0A
+*Trip Type*: ${encodeURIComponent(tripType)}%0A
+*Accommodation*: ${encodeURIComponent(accommodationType)}%0A
+*Specific Hotel/Resort*: ${encodeURIComponent(specificHotel)}%0A
+*Transportation*: ${encodeURIComponent(transportation)}%0A
+*Budget Range*: ${encodeURIComponent(budgetRange)}%0A
+*Specific Requests*: ${encodeURIComponent(specificRequests)}%0A
+*Remarks*: ${encodeURIComponent(remarks)}%0A
+*Seater*: ${encodeURIComponent(seater)}%0A`;
+
+          const whatsappNumber = "917402450407"; // Replace with your actual WhatsApp number
+          const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+          // Open WhatsApp in a new tab
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+  </body>
+</html>
